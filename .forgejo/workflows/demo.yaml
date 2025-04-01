@@ -2,5 +2,7 @@ on: [push]
 jobs:
   test:
     runs-on: docker
+    container:
+      image: alpine:3.21
     steps:
       - run: echo All Good
